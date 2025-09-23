@@ -629,3 +629,70 @@ footer {
         display: none;
     }
 }
+/* NORMAL FOOTER */
+.footer {
+  padding: 20px 30px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 8px 8px 0 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left section with logo and stacked text */
+.footer-left {
+  display: flex;
+  align-items: center; /* vertically center text with logo */
+  gap: 10px; /* space between logo and text */
+}
+
+.footer-left img.footer-logo {
+  height: 40px; /* adjust logo size */
+  width: auto;
+}
+
+.footer-left .footer-text p {
+  margin: 0; /* remove extra spacing */
+  line-height: 1.3; /* make text compact */
+}
+
+.footer-brand {
+  font-weight: bold;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.footer-author {
+  font-size: 12px; 
+  opacity: 0.8;
+}
+
+/* Right section (optional if you keep something there) */
+.footer-right {
+  text-align: right;
+  line-height: 1.4;
+  font-size: 18px;
+  color: var(--secondary);
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .footer-left {
+    justify-content: center;
+  }
+  .footer-right {
+    text-align: center;
+  }
+}
+/* END OF FOOTER */

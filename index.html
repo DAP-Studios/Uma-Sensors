@@ -456,7 +456,7 @@
                             <label for="message">Project Details / Requirements *</label>
                             <textarea id="message" name="message" rows="4" placeholder="Please describe your technical requirements, specifications, and any specific customization needed..." required></textarea>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+                        <!-- <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div> -->
                         <button type="submit" class="submit-btn">Send Inquiry</button>
                     </form>
                     <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: #94a3b8;">
@@ -464,16 +464,33 @@
                     </p>
                 </div>
             </div>
-            <footer>
-                <p><span class="made-in-india">Made In INDIA</span> | Proudly serving industries across India with global expansion plans</p>
-                <p style="margin-top: 0.5rem; font-size: 0.875rem;">Quality certified products | International standards compliance | 24/7 technical support</p>
-                <p style="margin-top: 5rem; font-size: 0.8rem; color: #88888d;">
-                &copy; 2025 DAP Tech Solutions. All rights reserved. 
-                <span style="display: block; margin-top: 0.25rem;">
-                    Websites · Mobile Apps · Software
-                </span>
+
+            <footer class="footer sticky">
+            <div class="footer-container">
+                <!-- Left: Copyright / Owner -->
+                <div class="footer-right">
+                <p>&copy; 2025 UMA Sensor. All rights reserved.</p>
+                </div>
+
+                <!-- Right: Developer Credit -->
+                <div class="footer-container">
+                    <div class="footer-left">
+                    <img src="images/dap.png" alt="Logo" class="footer-logo">
+                    <div class="footer-text">
+                    <p>Website by <span class="footer-brand">DAP Tech Solutions</span></p>
+                    <p><span class="footer-author">Created by Deep Parmar</span>
+                    <a href="tel:+919725362234">+91 9725362234</a></p>
+                    </div>
+                    </div>
+                </div>
             </footer>
+
         </section>
+        <!-- <div class="flex items-center mt-3 md:mt-0 space-x-2">
+            <span class="text-sm">Developed by </span>
+            <img src="images/dap.png" alt="DAP Tech Solutions Logo" class="logo">
+            <span class="font-semibold text-white">DAP Tech Solutions</span>
+        </div> -->
     </main>
     <script src="script.js"></script>
 </body>
